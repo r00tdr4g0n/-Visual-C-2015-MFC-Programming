@@ -221,6 +221,8 @@ void CExercise71Dlg::OnClickedButtonInsert()
 
 			m_nCount++;
 
+			m_listControl.SetFocus();
+
 			UpdateData(false);
 		}
 		else {
@@ -291,6 +293,8 @@ void CExercise71Dlg::OnClickedButtonModify()
 	m_strYear.Empty();
 	m_strGrade.Empty();
 	((CComboBox*)GetDlgItem(IDC_COMBO_GRADE))->SetCurSel(-1);
+
+	m_listControl.SetFocus();
 
 	UpdateData(false);
 }
